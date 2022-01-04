@@ -39,7 +39,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/NazimAitali/REST-Countries-API-with-color-theme-switcher-solution.git
-- Live Site URL: https://REST-Countries-API-with-color-theme-switcher-solution.netlify.com
+- Live Site URL: https://rest-countries-api-with-color-theme-switcher-solution.netlify.app/
 
 ## My process
 
@@ -55,9 +55,9 @@ Users should be able to:
 
 ### Useful resources
 
-- [React-icons](https://react-icons.github.io/react-icons/) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [React-icons](https://react-icons.github.io/react-icons/) - React-icons is a small library that helps you add icons (from all different icon libraries) to your React apps. It delivers the icons to your app as components so they're easier to work with, and it lets you style them so they're consistent with the overall style of your app.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+
 
 ## Author
 
