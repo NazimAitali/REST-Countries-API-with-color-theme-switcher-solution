@@ -30,9 +30,10 @@ Users should be able to:
 
 ### Screenshot
 ![](https://github.com/NazimAitali/REST-Countries-API-with-color-theme-switcher-solution/blob/master/public/screenshot/REST%20Countries%20API%20with%20color%20theme%20switcher%20solution-Home%201440px%20Light.png)
+![](https://github.com/NazimAitali/REST-Countries-API-with-color-theme-switcher-solution/blob/master/public/screenshot/REST%20Countries%20API%20with%20color%20theme%20switcher%20solution-Home%20750px%20Light.png)
 ![](https://github.com/NazimAitali/REST-Countries-API-with-color-theme-switcher-solution/blob/master/public/screenshot/REST%20Countries%20API%20with%20color%20theme%20switcher%20solution-Home%201440px%20Dark.png)
 ![](https://github.com/NazimAitali/REST-Countries-API-with-color-theme-switcher-solution/blob/master/public/screenshot/REST%20Countries%20API%20with%20color%20theme%20switcher%20solution-Home%20750px%20Dark.png)
-![](https://github.com/NazimAitali/REST-Countries-API-with-color-theme-switcher-solution/blob/master/public/screenshot/REST%20Countries%20API%20with%20color%20theme%20switcher%20solution-Home%20750px%20Dark.png)
+
 
 
 ### Links
