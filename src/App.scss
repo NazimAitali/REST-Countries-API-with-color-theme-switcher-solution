@@ -1,0 +1,14 @@
+@import "./styles/Reset.scss";
+@import "./styles/libs/Variable.scss";
+@import "./styles/libs/mixin.scss";
+.App {
+  @include ElementParameters(100vw, max-content, flex, center, center, column);
+  font-family: $Nunito !important;
+  user-select: none;
+  color: $Very-Dark-Blue;
+}
+.Screen-container {
+  @include ElementParameters(100%, 100%, flex, center, center, column);
+}
+@import "./components/TopBarre/style.scss";
+@import "./components/Main/style.scss";

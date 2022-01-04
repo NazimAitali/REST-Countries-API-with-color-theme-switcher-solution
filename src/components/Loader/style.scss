@@ -1,0 +1,24 @@
+@import "../../styles/libs/mixin.scss";
+@import "../../styles/libs/Variable.scss";
+.Loder {
+  @include ElementParameters(100%, 100%, flex, center, center, column);
+}
+
+.Loder svg {
+  @include size(4, "desktop");
+  animation: rotation 0.8s infinite linear;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

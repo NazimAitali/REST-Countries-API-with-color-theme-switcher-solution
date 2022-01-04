@@ -1,0 +1,45 @@
+@import "../../../styles/libs/mixin.scss";
+@import "../../../styles/libs/Variable.scss";
+.Bottom-main-container {
+  @include ElementParameters(100%, 85%, flex, center, center, row);
+  position: relative;
+  overflow: inherit;
+}
+.Box {
+  @include ElementParameters(100%, 100%, flex, center, center, row);
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex-wrap: wrap;
+  scrollbar-width: thin;
+}
+.Nodata {
+  @include ElementParameters(100%, 100%, flex, space-evenly, center, column);
+  @include size(4.5, "desktop");
+  overflow: hidden;
+}
+.Nodata img {
+  width: 50%;
+}
+@media (min-width: $Screen-Tab) {
+  .Bottom-main-container {
+    @include ElementParameters(100%, 81%, flex, center, center, row);
+  }
+}
+@media (min-width: $Screen-Desktop-Small) {
+  .Bottom-main-container {
+    @include ElementParameters(100%, 86%, flex, space-evenly, center, row);
+  }
+  .Box {
+    @include ElementParameters(91%, 95%, flex, space-between, center, row);
+  }
+  .Box-title {
+    align-items: flex-start;
+  }
+  .Nodata {
+    @include size(1.5, "desktop");
+    font-weight: 600;
+  }
+  .Nodata img {
+    width: 25%;
+  }
+}

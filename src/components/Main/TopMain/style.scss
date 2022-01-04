@@ -1,0 +1,273 @@
+@import "../../../styles/libs/mixin.scss";
+@import "../../../styles/libs/Variable.scss";
+.Top-main-container {
+  @include ElementParameters(100%, 15%, flex, space-around, center, column);
+}
+.Botton-container {
+  @include ElementParameters(85%, 70%, flex, flex-start, flex-start, row);
+}
+.Button {
+  @include ElementParameters(32.5%, 45%, flex, center, center, row);
+  border: none;
+  background-color: White;
+  box-shadow: $Shadow;
+  border-radius: 4px;
+  margin: 0%;
+  padding: 0%;
+  cursor: pointer;
+  position: relative;
+}
+
+.Button-dark {
+  color: $White;
+  background-color: $Dark-Blue;
+}
+.Button div {
+  @include ElementParameters(3%, 100%, flex, flex-start, center, row);
+  @include size(3.7, "mobile");
+}
+.Button svg {
+  @include size(4.5, "mobile");
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 23%;
+}
+.Research-container {
+  @include ElementParameters(100%, 53%, flex, center, center, row);
+  position: relative;
+}
+.Research {
+  @include ElementParameters(100%, 80%, flex, center, flex-end, row);
+  position: relative;
+}
+.Research-content {
+  @include ElementParameters(91%, 92%, flex, flex-start, flex-end, row);
+  position: relative;
+}
+.Research-input {
+  @include ElementParameters(100%, 100%, flex, center, center, row);
+  @include size(3.2, "mobile");
+  background-color: $White;
+  color: $Dark-Gray;
+  text-indent: 21.2%;
+  border-radius: 4px;
+  border: none;
+  box-shadow: $Shadow;
+  &:focus {
+    outline: none;
+  }
+}
+.Research-input-dark {
+  color: $White;
+  background-color: $Dark-Blue;
+}
+.Research-icon {
+  color: $Dark-Gray;
+}
+.Research-icon-dark {
+  color: $White;
+}
+.Research-icon svg {
+  @include size(4.5, "mobile");
+  @include position(0, 0, 9, 0, "%");
+  height: 100%;
+  position: absolute;
+}
+
+.Filter-container {
+  @include ElementParameters(100%, 47%, flex, center, flex-end, row);
+}
+.Filter-content {
+  @include ElementParameters(100%, 90%, flex, flex-start, flex-start, row);
+}
+.Filter {
+  @include ElementParameters(57.4%, 90%, flex, flex-end, flex-end, row);
+  position: relative;
+}
+.Filter-title {
+  @include ElementParameters(92%, 100%, flex, flex-start, center, row);
+  @include size(3.24, "mobile");
+  background-color: $White;
+  text-indent: 45px;
+  box-shadow: $Shadow;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Filter-title-dark {
+  color: $White;
+  background-color: $Dark-Blue !important;
+}
+.Select-arrow {
+  @include ElementParameters(21.7%, 97%, flex, center, center, row);
+  @include size(3.2, "mobile");
+  position: absolute;
+  cursor: pointer;
+}
+.Filter-liste {
+  @include ElementParameters(92%, 289px, none, center, flex-end, column);
+  box-shadow: $Shadow;
+  position: absolute;
+  top: 109%;
+  background: $White;
+  border-radius: 11px;
+  z-index: 2;
+}
+.Filter-liste-dark {
+  color: $White;
+  background-color: $Dark-Blue !important;
+}
+.Liste {
+  @include ElementParameters(89%, 88%, flex, space-evenly, center, column);
+  position: relative;
+}
+.Liste li {
+  @include ElementParameters(100%, 13%, flex, unset, unset, unset);
+  @include size(3.3, "mobile");
+  cursor: pointer;
+  &:hover {
+    color: $Dark-Gray;
+  }
+}
+@media (min-width: $Screen-Tab) {
+  .Top-main-container {
+    @include ElementParameters(100%, 19%, flex, space-around, center, column);
+  }
+  .Botton-container {
+    height: 53%;
+  }
+  .Button {
+    height: 35%;
+  }
+  .Filter {
+    height: 81%;
+  }
+  .Filter-content {
+    height: 78%;
+  }
+  .Filter-title {
+    height: 92%;
+  }
+  .Select-arrow {
+    height: 91%;
+  }
+  .touch {
+    height: 95%;
+  }
+  .Research {
+    height: 55%;
+  }
+}
+@media (min-width: $Screen-Desktop-Small) {
+  .Top-main-container {
+    @include dimension(100%, 14%);
+    flex-direction: row;
+  }
+  .Botton-container {
+    @include dimension(89%, 83%);
+    align-items: flex-end;
+  }
+  .Button {
+    @include dimension(10.8%, 38%);
+  }
+  .Button div {
+    @include size(1.1, "desktop");
+    width: 9%;
+    align-items: center;
+  }
+  .Button svg {
+    @include size(1.4, "desktop");
+  }
+  .Research {
+    @include ElementParameters(86%, 61%, flex, center, flex-end, row);
+    position: relative;
+  }
+  .Research-container {
+    @include dimension(39%, 94%);
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .Research-content {
+    @include dimension(100%, 75%);
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .Filter-container {
+    @include dimension(39%, 94%);
+    justify-content: flex-end;
+  }
+  .Research-input {
+    @include dimension(100%, 100%);
+    @include size(0.97, "desktop");
+    align-items: flex-start;
+    text-indent: 15.2%;
+  }
+  .Research-icon svg {
+    @include size(1.4, "desktop");
+    height: 100%;
+    left: 6.5%;
+  }
+  .Filter-content {
+    @include dimension(39%, 81%);
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .Filter {
+    @include dimension(100%, 81%);
+    align-items: flex-start;
+  }
+  .Filter-title {
+    @include size(0.99, "desktop");
+    height: 72%;
+    text-indent: 24px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  .Select-arrow {
+    @include size(1, "desktop");
+    height: 70%;
+  }
+  .touch {
+    height: 100%;
+  }
+  .Filter-liste {
+    height: 164px;
+    top: 75%;
+    background: $White;
+    border-radius: 6px;
+  }
+  .Liste li {
+    @include size(1, "desktop");
+  }
+  .Liste {
+    width: 88%;
+  }
+}
+@media (min-width: $Screen-Desktop-Large) {
+  .Research-container {
+    align-items: center;
+  }
+  .Research-content {
+    height: 96%;
+  }
+  .Research {
+    height: 65%;
+  }
+  .Research-icon {
+    height: 67%;
+  }
+  .Research-input,
+  .Filter {
+    height: 100%;
+  }
+  .Filter-title {
+    height: 78%;
+  }
+  .Select-arrow {
+    height: 77%;
+  }
+  .Button {
+    height: 55%;
+  }
+}

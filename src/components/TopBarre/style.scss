@@ -1,0 +1,73 @@
+@import "../../styles/libs/mixin.scss";
+@import "../../styles/libs/Variable.scss";
+
+.Top-barre-container {
+  @include ElementParameters(100%, 80px, flex, space-evenly, center, row);
+  box-shadow: 0px 0px 2px 2px rgba(133, 133, 133, 0.1);
+  background-color: $White;
+  z-index: 2;
+}
+.Top-barre-container-dark {
+  color: $White;
+  background-color: $Dark-Blue;
+}
+.Title-container {
+  flex: 1;
+  height: 100%;
+}
+.Title-content {
+  @include ElementParameters(80%, 100%, flex, flex-end, center, row);
+  @include size(3.68, "mobile");
+  font-weight: 700;
+  cursor: pointer;
+}
+.Title {
+  @include ElementParameters(100%, 100%, flex, flex-end, center, row);
+}
+.Switch-container {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.Switch-content {
+  @include ElementParameters(100%, 100%, flex, space-evenly, center, row);
+}
+.Switch-content .Switch-title {
+  @include ElementParameters(35%, 100%, flex, flex-start, center, row);
+  font-weight: 600;
+  @include size(3.1, "mobile");
+}
+.Switch-content .Switch-icon {
+  @include ElementParameters(49%, 100%, flex, flex-end, center, row);
+  @include size(4, "mobile");
+}
+.Switch-icon :first-child {
+  cursor: pointer;
+}
+@media (min-width: $Screen-Tab) {
+  .Top-barre-container {
+    @include ElementParameters(100%, 159px, flex, space-evenly, center, row);
+  }
+}
+@media (min-width: $Screen-Desktop-Small) {
+  .Top-barre-container {
+    height: 80px;
+  }
+  .Title-content {
+    @include ElementParameters(43%, 98%, flex, flex-end, center, row);
+    @include size(1.64, "desktop");
+    font-weight: 700;
+  }
+  .Switch-content {
+    width: 70%;
+  }
+  .Switch-content .Switch-icon {
+    width: 65%;
+    @include size(1.35, "desktop");
+  }
+  .Switch-content .Switch-title {
+    @include size(1.1, "desktop");
+    width: 30%;
+  }
+}

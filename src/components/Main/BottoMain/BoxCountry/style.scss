@@ -1,0 +1,275 @@
+@import "../../../../styles/libs/mixin.scss";
+@import "../../../../styles/libs/Variable.scss";
+
+.Box-Country-container {
+  @include ElementParameters(100%, 100%, flex, center, center, column);
+}
+
+.Box-Country-image-container {
+  @include ElementParameters(100%, 36%, flex, center, center, row);
+}
+.Box-Country-image-content {
+  @include ElementParameters(100%, 100%, flex, center, center, row);
+  position: relative;
+}
+.Box-Country-image {
+  @include dimension(85%, 98%);
+  position: absolute;
+  top: -15%;
+  box-shadow: $Shadow;
+}
+.Box-Country-image img {
+  @include dimension(100%, 100%);
+  object-fit: cover;
+}
+.Box-Country-data-container {
+  @include ElementParameters(100%, 76%, flex, center, center, row);
+}
+.Box-Country-data-content {
+  @include ElementParameters(100%, 100%, flex, center, center, column);
+}
+.Box-Country-title-container {
+  @include ElementParameters(100%, 10%, flex, center, center, row);
+}
+.Box-Country-title-content {
+  @include ElementParameters(84.7%, 89%, flex, flex-start, flex-start, row);
+  @include size(5.6, "mobile");
+  font-weight: 700;
+}
+.Box-Country-no-data {
+  @include ElementParameters(100%, 100%, flex, flex-start, flex-end, row);
+  color: tomato;
+}
+.Box-Country-details-container {
+  @include ElementParameters(100%, 90%, flex, center, center, column);
+}
+.Box-Country-details-top-container {
+  @include ElementParameters(100%, 72%, flex, center, center, column);
+}
+.Box-Country-details-top-content {
+  @include ElementParameters(100%, 100%, flex, center, center, column);
+}
+.Box-Country-details-left-container,
+.Box-Country-details-right-container {
+  @include ElementParameters(86%, 50%, flex, flex-start, center, row);
+}
+.Box-Country-details-content {
+  @include ElementParameters(100%, 100%, flex, center, center, column);
+}
+.Box-Country-details-right-container {
+  .Box-Country-details-content {
+    height: 60%;
+  }
+}
+.Box-Country-details {
+  @include ElementParameters(100%, 100%, flex, flex-start, center, row);
+}
+.Box-Country-details-name {
+  @include size(3.6, "mobile");
+  font-weight: 600;
+  margin-right: 1%;
+}
+.Box-Country-details-value {
+  @include size(3.6, "mobile");
+}
+.Box-Country-details-bottom-container {
+  @include ElementParameters(100%, 28%, flex, center, center, column);
+}
+.Box-Country-details-bottom-content {
+  @include ElementParameters(100%, 100%, flex, center, center, column);
+}
+.Box-Country-details-border {
+  @include ElementParameters(100%, 100%, flex, center, center, column);
+}
+.Box-Country-details-border-content {
+  @include ElementParameters(85%, 20%, flex, center, center, column);
+}
+.Box-Country-details-border-title {
+  @include ElementParameters(100%, 100%, flex, center, flex-start, column);
+  @include size(4.4, "mobile");
+  font-weight: 600;
+}
+.Box-Country-details-border-value-container {
+  @include ElementParameters(85%, 80%, flex, center, flex-end, row);
+  overflow-y: auto;
+}
+.Box-Country-details-border-value-content {
+  @include ElementParameters(100%, 86%, flex, flex-start, flex-start, row);
+  flex-wrap: wrap;
+}
+.Box-Country-details-border-value {
+  @include ElementParameters(30.5%, 33%, flex, center, center, row);
+  @include size(3.1, "mobile");
+  font-weight: 600;
+  background-color: $White;
+  border-radius: 4px;
+  box-shadow: $Shadow;
+  margin: 2% 2% 0% 0%;
+  cursor: pointer;
+}
+.Box-Country-details-border-value-dark {
+  color: $White;
+  background-color: $Dark-Blue;
+}
+@media (min-width: $Screen-Tab) {
+  .Box-Country-details-border-value-content {
+    height: 96%;
+  }
+  .Box-Country-details-border-title {
+    height: 66%;
+  }
+  .Box-Country-details-border-content {
+    justify-content: flex-start;
+  }
+}
+@media (min-width: $Screen-Desktop-Small) {
+  .Box-Country-container {
+    flex-direction: row;
+  }
+  .Box-Country-image-container {
+    @include ElementParameters(50%, 100%, flex, center, center, row);
+  }
+  .Box-Country-image-content {
+    @include ElementParameters(100%, 83%, flex, center, flex-start, row);
+  }
+
+  .Box-Country-image {
+    height: 50%;
+    top: 15%;
+  }
+  .Box-Country-details-container {
+    height: 80%;
+    align-items: flex-start;
+  }
+  .Box-Country-details-content {
+    @include dimension(79%, 86%);
+  }
+  .Box-Country-details-top-content {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .Box-Country-details-name {
+    @include size(1.5, "desktop");
+  }
+  .Box-Country-details-value {
+    @include size(1.3, "desktop");
+  }
+
+  .Box-Country-details-border-title {
+    @include dimension(85%, 21%);
+    @include size(1.3, "desktop");
+    align-items: center;
+  }
+  .Box-Country-details-border-value {
+    @include dimension(18%, 60%);
+    @include size(1.1, "desktop");
+  }
+
+  .Box-Country-details-bottom-container {
+    height: 70%;
+  }
+  .Box-Country-details-top-container {
+    height: 30%;
+  }
+  .Box-Country-details-left-container,
+  .Box-Country-details-right-container {
+    @include ElementParameters(50%, 100%, flex, center, flex-start, row);
+  }
+  .Box-Country-title-container {
+    height: 20%;
+  }
+  .Box-Country-title-content {
+    @include dimension(89%, 85%);
+    @include size(2.5, "desktop");
+    align-items: flex-end;
+  }
+  .Box-Country-details-right-container .Box-Country-details-content {
+    @include dimension(85%, 54%);
+  }
+  .Box-Country-data-container {
+    @include ElementParameters(50%, 100%, flex, center, center, row);
+  }
+  .Box-Country-details {
+    align-items: flex-end;
+  }
+  .Box-Country-details-border {
+    height: 94%;
+    flex-direction: row;
+  }
+  .Box-Country-details-border-content {
+    @include ElementParameters(25%, 100%, flex, flex-start, flex-end, column);
+  }
+  .Box-Country-details-border-value-container {
+    @include ElementParameters(75%, 91%, flex, center, flex-start, row);
+  }
+  .Box-Country-details-border-value-content {
+    @include ElementParameters(99%, 10%, flex, flex-start, flex-end, row);
+  }
+}
+@media (min-width: $Screen-Desktop-Medium) {
+  .Box-Country-image {
+    @include dimension(77%, 59%);
+    top: 0%;
+  }
+  .Box-Country-title-content {
+    @include size(2.2, "desktop");
+  }
+  .Box-Country-details-content {
+    height: 84%;
+  }
+  .Box-Country-details-name {
+    @include size(1.1, "desktop");
+    margin-right: 2%;
+  }
+  .Box-Country-details-value {
+    @include size(1.1, "desktop");
+  }
+  .Box-Country-details-border-title {
+    @include size(1.15, "desktop");
+  }
+  .Box-Country-details-border-value {
+    @include dimension(18%, 69%);
+    @include size(1.1, "desktop");
+  }
+  .Box-Country-details-border-value-content {
+    height: 10%;
+    align-items: flex-end;
+  }
+  .Box-Country-details {
+    line-height: 14px;
+  }
+  .Box-Country-details-right-container .Box-Country-details-content {
+    height: 51%;
+  }
+}
+@media (min-width: $Screen-Desktop-Large) {
+  .Box-Country-image-content {
+    @include dimension(85%, 75%);
+  }
+  .Box-Country-data-content {
+    @include dimension(95%, 85%);
+  }
+  .Box-Country-image {
+    @include dimension(70%, 80%);
+  }
+
+  .Box-Country-details-top-container {
+    height: 60%;
+  }
+  .Box-Country-details-bottom-container {
+    height: 40%;
+  }
+  .Box-Country-details-border-value-content {
+    height: 60%;
+    align-items: flex-start;
+  }
+  .Box-Country-details-border-value-container {
+    height: 93%;
+  }
+
+  .Box-Country-details-border-value {
+    height: 35%;
+    box-shadow: $Shadow;
+    margin: 0% 3% 1% 0%;
+  }
+}

@@ -1,0 +1,151 @@
+@import "../../../../styles/libs/mixin.scss";
+@import "../../../../styles/libs/Variable.scss";
+
+.Box-container {
+  @include ElementParameters(71%, 56%, flex, center, center, column);
+  background-color: $White;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 5%;
+  box-shadow: $Shadow;
+  cursor: pointer;
+}
+
+.Box-container-dark {
+  background-color: $Dark-Blue;
+}
+.Box-content {
+  @include ElementParameters(100%, 100%, flex, center, center, column);
+  position: relative;
+}
+
+.Box-image {
+  @include ElementParameters(100%, 45%, flex, flex-start, center, column);
+  position: relative;
+}
+.Box-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Box-image div {
+  @include size(4, "mobile");
+  position: absolute;
+  top: 40%;
+  font-weight: 700;
+}
+.Box-details {
+  @include ElementParameters(100%, 55%, flex, flex-start, center, column);
+}
+.Box-title-content {
+  @include ElementParameters(100%, 33%, flex, center, flex-end, row);
+}
+.Box-title {
+  @include ElementParameters(80%, 56%, flex, flex-start, flex-end, row);
+}
+.Title-data {
+  @include size(4.7, "mobile");
+  width: 100%;
+}
+.Box-details-content {
+  @include ElementParameters(100%, 44%, flex, flex-start, center, column);
+}
+.Population-content,
+.Region-content,
+.Capital-content {
+  @include ElementParameters(100%, 33%, flex, center, center, row);
+}
+.Population,
+.Region,
+.Capital {
+  @include ElementParameters(80%, 100%, flex, flex-start, flex-end, row);
+}
+.Details-title {
+  @include size(3.8, "mobile");
+  width: 35%;
+  line-height: 34px;
+  font-weight: 600;
+}
+.Details-data {
+  @include size(3.6, "mobile");
+  width: 66%;
+  line-height: 32px;
+}
+.Region .Details-title,
+.Capital .Details-title {
+  width: 24%;
+}
+
+@media (min-width: $Screen-Tab) {
+  .Box-container {
+    @include ElementParameters(71%, 46%, flex, center, center, column);
+  }
+}
+@media (min-width: $Screen-Desktop-Small) {
+  .Box-container {
+    @include dimension(20.5%, 43.4%);
+    margin: 0% 1% 6%;
+  }
+  .Box-image {
+    height: 47%;
+  }
+  .Box-image div {
+    @include size(1.5, "desktop");
+  }
+  .Box-details {
+    height: 53%;
+  }
+  .Title-data {
+    @include size(1.5, "desktop");
+    height: 19%;
+  }
+  .Details-title {
+    @include size(1, "desktop");
+    font-size: 1vmax;
+    line-height: 18px;
+    width: 37%;
+  }
+  .Details-data {
+    @include size(1.2, "desktop");
+    line-height: 18px;
+    width: 65%;
+  }
+}
+@media (min-width: $Screen-Desktop-Medium) {
+  .Box-details {
+    height: 53%;
+  }
+  .Box-title {
+    align-items: center;
+  }
+  .Title-data {
+    @include size(1.2, "desktop");
+    height: 19%;
+  }
+  .Details-data {
+    @include size(0.9, "desktop");
+    line-height: 18px;
+    width: 65%;
+  }
+}
+@media (min-width: $Screen-Desktop-Large) {
+  .Box-container {
+    @include dimension(18%, 61%);
+    margin-bottom: 2%;
+  }
+  .Title-data {
+    @include size(1, "desktop");
+    font-size: 1vmax;
+  }
+  .Details-title {
+    width: 46%;
+    @include size(1, "desktop");
+  }
+  .Details-data {
+    @include size(1, "desktop");
+  }
+  .Region .Details-title,
+  .Capital .Details-title {
+    width: 29%;
+  }
+}

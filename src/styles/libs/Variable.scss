@@ -1,0 +1,15 @@
+$Dark-Blue: hsl(209, 23%, 22%); //(Dark Mode Elements)
+$Very-Dark-Blue: hsl(207, 26%, 17%); //(Dark Mode Background)
+$Very-Dark-Blue-Text: hsl(200, 15%, 8%); //(Light Mode Text)
+$Dark-Gray: hsl(0, 0%, 52%); //(Light Mode Input)
+$Very-Light-Gray: hsl(0, 0%, 98%); //(Light Mode Background)
+$White: hsl(0, 0%, 100%); //(Dark Mode Text & Light Mode Elements)
+$Shadow: 0px 0px 13px -6px rgba($Very-Dark-Blue-Text, 0.2);
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+$Nunito: "Nunito Sans", sans-serif;
+
+$Screen-Tab: 420px;
+$Screen-Desktop-Small: 1023px;
+$Screen-Desktop-Medium: 1279px;
+$Screen-Desktop-Large: 1500px;

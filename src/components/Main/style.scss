@@ -1,0 +1,27 @@
+@import "../../styles/libs/Variable.scss";
+@import "../../styles/libs/mixin.scss";
+
+.Main-container {
+  @include ElementParameters(100%, 740px, flex, center, center, column);
+  background-color: $Very-Light-Gray;
+  position: relative;
+}
+.Main-container-dark {
+  color: $White;
+  background-color: $Very-Dark-Blue;
+}
+@media (min-width: $Screen-Tab) {
+  .Main-container {
+    @include ElementParameters(100%, 1811px, flex, center, center, column);
+  }
+}
+@media (min-width: $Screen-Desktop-Small) {
+  .Main-container {
+    height: 944px;
+  }
+}
+@media (min-width: $Screen-Desktop-Large) {
+  .Main-container {
+    height: 631px;
+  }
+}
